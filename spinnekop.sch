@@ -1,0 +1,237 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:spinnekop-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY13A-S IC1
+U 1 1 548EFC7E
+P 5425 3725
+F 0 "IC1" H 4625 4125 40  0000 C CNN
+F 1 "ATTINY13A-S" H 6075 3325 40  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-W" H 6075 3725 35  0000 C CIN
+F 3 "" H 4625 4075 60  0000 C CNN
+	1    5425 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 548F13A6
+P 4275 4450
+F 0 "P2" H 4275 4700 50  0000 C CNN
+F 1 "CONN_01X04" V 4375 4450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 4275 4450 60  0001 C CNN
+F 3 "" H 4275 4450 60  0000 C CNN
+	1    4275 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 548F1565
+P 3075 4450
+F 0 "P1" H 3075 4700 50  0000 C CNN
+F 1 "CONN_01X04" V 3175 4450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3075 4450 60  0001 C CNN
+F 3 "" H 3075 4450 60  0000 C CNN
+	1    3075 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 548F1B16
+P 3775 2525
+F 0 "CON1" H 3695 2765 50  0000 C CNN
+F 1 "AVR-ISP-6" H 3535 2295 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" V 3255 2565 50  0001 C CNN
+F 3 "" H 3775 2525 60  0000 C CNN
+	1    3775 2525
+	-1   0    0    1   
+$EndComp
+$Comp
+L 78L05 U1
+U 1 1 548F1378
+P 7450 4250
+F 0 "U1" H 7600 4054 60  0000 C CNN
+F 1 "78L05" H 7450 4450 60  0000 C CNN
+F 2 "Discret:LM78LXX" H 7450 4250 60  0001 C CNN
+F 3 "" H 7450 4250 60  0000 C CNN
+	1    7450 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C2
+U 1 1 548F15DB
+P 7975 4100
+F 0 "C2" H 7975 4200 40  0000 L CNN
+F 1 "C" H 7981 4015 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:Capacitor3MMDiscRM2.5" H 8013 3950 30  0001 C CNN
+F 3 "" H 7975 4100 60  0000 C CNN
+	1    7975 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 548F16C8
+P 6900 4100
+F 0 "C1" H 6900 4200 40  0000 L CNN
+F 1 "C" H 6906 4015 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:Capacitor3MMDiscRM2.5" H 6938 3950 30  0001 C CNN
+F 3 "" H 6900 4100 60  0000 C CNN
+	1    6900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 548F268E
+P 8400 4100
+F 0 "P3" H 8400 4250 50  0000 C CNN
+F 1 "CONN_01X02" V 8500 4100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x01" H 8400 4100 60  0001 C CNN
+F 3 "" H 8400 4100 60  0000 C CNN
+	1    8400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 3975 4425 4250
+Wire Wire Line
+	4425 3775 4325 3775
+Wire Wire Line
+	4325 3775 4325 4250
+Wire Wire Line
+	4425 3875 4225 3875
+Wire Wire Line
+	4225 3875 4225 4250
+Wire Wire Line
+	6425 3875 6425 4600
+Wire Wire Line
+	6425 4600 2450 4600
+Wire Wire Line
+	3950 4600 3950 4250
+Wire Wire Line
+	3950 4250 4125 4250
+Wire Wire Line
+	4425 3475 3225 3475
+Wire Wire Line
+	3225 2525 3225 4250
+Wire Wire Line
+	3125 3575 4425 3575
+Wire Wire Line
+	3125 3575 3125 4250
+Wire Wire Line
+	3025 3675 4425 3675
+Wire Wire Line
+	3025 3675 3025 4250
+Wire Wire Line
+	6425 3175 6425 3475
+Wire Wire Line
+	2925 3175 6425 3175
+Wire Wire Line
+	2925 3175 2925 4250
+Wire Wire Line
+	3650 2625 3650 3175
+Connection ~ 3650 3175
+Wire Wire Line
+	3650 2425 2450 2425
+Wire Wire Line
+	2450 2425 2450 4600
+Connection ~ 3950 4600
+Wire Wire Line
+	3650 2525 3225 2525
+Connection ~ 3225 3475
+Wire Wire Line
+	3900 2625 3900 3575
+Connection ~ 3900 3575
+Wire Wire Line
+	3900 2525 4175 2525
+Wire Wire Line
+	4175 2525 4175 3675
+Connection ~ 4175 3675
+Wire Wire Line
+	3900 2425 4550 2425
+Wire Wire Line
+	4550 2425 4550 4050
+Wire Wire Line
+	4550 4050 4425 4050
+Connection ~ 4425 4050
+Wire Wire Line
+	6425 3975 6725 3975
+Wire Wire Line
+	6725 3975 6725 3900
+Wire Wire Line
+	7450 3900 7450 4000
+Wire Wire Line
+	6900 4300 7050 4300
+Wire Wire Line
+	6900 4300 6900 4575
+Wire Wire Line
+	6900 4575 8625 4575
+Wire Wire Line
+	8625 4575 8625 3475
+Wire Wire Line
+	8625 3475 6425 3475
+Wire Wire Line
+	6725 3900 8200 3900
+Connection ~ 6900 3900
+Connection ~ 7450 3900
+Wire Wire Line
+	7850 4300 8200 4300
+Wire Wire Line
+	8200 3900 8200 4050
+Connection ~ 7975 3900
+Wire Wire Line
+	8200 4300 8200 4150
+Connection ~ 7975 4300
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 548F2DF7
+P 6425 3875
+F 0 "#FLG01" H 6425 3970 30  0001 C CNN
+F 1 "PWR_FLAG" H 6425 4055 30  0000 C CNN
+F 2 "" H 6425 3875 60  0000 C CNN
+F 3 "" H 6425 3875 60  0000 C CNN
+	1    6425 3875
+	1    0    0    -1  
+$EndComp
+Connection ~ 6425 3975
+$EndSCHEMATC
