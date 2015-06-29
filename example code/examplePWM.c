@@ -23,14 +23,31 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+
+An example program (For the spinnekop-board) that fades the LED at PB1
+between HIGH and LOW state. (Breathing light effect)
+Example usage: The board can be connected to the power LED pin inside 
+a desktop computer 
+
+([VCC --> LED+] & [GND --> LED-] of the board pins instead of the LED),
+
+Then the LED inside the case can be connected to the spinnekop-board 
+
+([LED+ --> PB0] & [LED- --> GND] of the LED pins onto the board)
+
+PB0 is pin 5 on the microcontroller.
+The LED on the desktop's case will now fade in a breathing pattern,
+with a board implanted between the LED and the motherboard to create
+the effect. 
+
+Made by Philip Goosen
 */
 
-// A Example program, fades the LED at PB1  on and off. (Breathing light effect)
-
 #define F_CPU 9600000 // 9.6MHz with internal oscillator
+#define TIMEW 1024 // Sets the rate of the fading effect.
+
 #include <avr/io.h>
 #include <util/delay_basic.h>
-#define TIMEW 1024
 
 void setup_pwm()
 {
@@ -60,12 +77,13 @@ int main(void)
 
 	while(1)
 		{
-			for(val = 0; val < 255; val++)
+			for(val = 0; val < 255; val++) // Increases the brightness
 			{
 				write_pwm(val);
 				_delay_loop_2(TIMEW);
 			}
-			for(val = 255; val > 0; val--)
+			
+			for(val = 255; val > 0; val--) // Decreases the brightness
 			{
 				write_pwm(val);
 				_delay_loop_2(TIMEW);
