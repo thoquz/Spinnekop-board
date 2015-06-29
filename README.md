@@ -19,9 +19,9 @@ The example code requires [avr-gcc compiler](https://gcc.gnu.org/wiki/avr-gcc).
 Compiling and flashing the code on a Debian-based distro:
 
 ```Shell
-#  apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude
-$  make
-$  make flash
+sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude
+make
+make flash
 ```
 If the last command fails, change the PROGRAMMER variable in the Makefile to match your programming device.
 Consult the avrdude man page for the name of your programming device.
