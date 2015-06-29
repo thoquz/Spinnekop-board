@@ -14,7 +14,7 @@ Basic useful feature list:
 
 The board is designed in [KiCAD](www.kicad-pcb.org)
 
-The example code requires [avr-gcc compiler](https://gcc.gnu.org/wiki/avr-gcc).
+The [example code](https://github.com/thoquz/Spinnekop-board/blob/master/example%20code/examplePWM.c) requires the [avr-gcc compiler](https://gcc.gnu.org/wiki/avr-gcc).
 
 Compiling and flashing the code on a Debian-based distro:
 
